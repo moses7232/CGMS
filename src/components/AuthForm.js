@@ -26,7 +26,7 @@ const AuthForm = () => {
 
         try {
             const response = await axios.post(url, payload);
-            setMessage(isLogin ? 'Login successful!' : 'Registration successful! Please login.');
+            setMessage(isLogin ? 'Welcome back! You’ve successfully logged in.' : 'Registration successful! You can now log in to continue.');
             setMessageType('success');
             if (isLogin) {
                 localStorage.setItem('token', response.data.token);
@@ -34,7 +34,7 @@ const AuthForm = () => {
             }
         } catch (error) {
             console.error('Error during submission:', error);
-            setMessage(error.response?.data?.message || 'Something went wrong!');
+            setMessage(error.response?.data?.message || 'Oops! Something went wrong. Please try again.');
             setMessageType('danger');
         }
     };
@@ -42,12 +42,13 @@ const AuthForm = () => {
     return (
         <Container className="d-flex flex-column justify-content-center align-items-center vh-100">
             <div className="text-center mb-4">
-                <h1 className="display-4 text-primary">Central Grievance Monitoring System</h1>
-                <p className="text-muted lead">Effortlessly manage and resolve grievances with our secure and user-friendly platform.</p>
+                <h1 className="display-4 text-primary">Welcome to CGMS Guest Connect – Centralized Solutions for Every Guest Need
+</h1>
+                <p className="text-muted lead">Login or sign up to access seamless, secure, and efficient grievance resolution.</p>
             </div>
             
             <Card className="p-4 shadow-lg" style={{ maxWidth: '400px', width: '100%' }}>
-                <h2 className="text-center mb-4">{isLogin ? 'Login' : 'Sign Up'}</h2>
+                <h2 className="text-center mb-4">{isLogin ? 'Welcome Back!' : 'Join Us Today!'}</h2>
 
                 {/* Display success/error message */}
                 {message && (
@@ -64,7 +65,7 @@ const AuthForm = () => {
                                 <span className="input-group-text"><FaUser /></span>
                                 <Form.Control
                                     type="text"
-                                    placeholder="Username"
+                                    placeholder="Choose a Username"
                                     value={username}
                                     onChange={(e) => setUsername(e.target.value)}
                                     required
@@ -77,7 +78,7 @@ const AuthForm = () => {
                             <span className="input-group-text"><FaEnvelope /></span>
                             <Form.Control
                                 type="email"
-                                placeholder="Email"
+                                placeholder="Enter Your Email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
@@ -89,7 +90,7 @@ const AuthForm = () => {
                             <span className="input-group-text"><FaLock /></span>
                             <Form.Control
                                 type="password"
-                                placeholder="Password"
+                                placeholder="Enter Your Password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
@@ -97,7 +98,7 @@ const AuthForm = () => {
                         </div>
                     </Form.Group>
                     <Button type="submit" variant="primary" className="w-100 fw-bold py-2">
-                        {isLogin ? 'Login' : 'Sign Up'}
+                        {isLogin ? 'Log In' : 'Create Account'}
                     </Button>
                 </Form>
 
@@ -107,7 +108,7 @@ const AuthForm = () => {
                         onClick={() => setIsLogin(!isLogin)}
                         className="text-decoration-none"
                     >
-                        {isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login"}
+                        {isLogin ? "New here? Sign Up to Get Started" : "Already have an account? Log In"}
                     </Button>
                 </div>
             </Card>

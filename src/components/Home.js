@@ -10,9 +10,12 @@ function Home() {
     <Container className="home-container mt-5">
       <Row className="mb-4">
         <Col>
-          <h1 className="text-center mb-4 display-4 font-weight-bold text-primary">Welcome to the Centralized Grievance Management System (CGMS)</h1>
+          <h1 className="text-center mb-4 display-4 font-weight-bold text-primary">
+            Welcome to CGMS Guest Connect – Centralized Solutions for Every Guest Need
+          </h1>
           <p className="lead text-center text-muted">
-          We are here to help you with any concerns. Let’s resolve issues together! </p>
+            We're here to ensure your stay is nothing short of exceptional. Share your concerns, and let us resolve them for a better experience!
+          </p>
         </Col>
       </Row>
 
@@ -21,9 +24,9 @@ function Home() {
         <Col md={6}>
           <Card className="mb-4 shadow-sm rounded">
             <Card.Body>
-              <Card.Title><FaHotel className="me-2 text-secondary" />About Hospitality</Card.Title>
+              <Card.Title><FaHotel className="me-2 text-secondary" />About the Hospitality Industry</Card.Title>
               <Card.Text className="text-muted">
-                The hospitality industry is dedicated to providing high-quality services, comfort, and satisfaction to guests. Whether it’s hotels, resorts, or restaurants, the goal is to create a seamless, enjoyable experience for visitors. Promptly addressing guests' needs is crucial to achieving high levels of satisfaction and loyalty in this industry.
+                The hospitality industry is dedicated to creating memorable and comfortable experiences for guests. From top-notch service to seamless guest support, every detail matters. Your satisfaction drives our efforts!
               </Card.Text>
             </Card.Body>
           </Card>
@@ -33,7 +36,7 @@ function Home() {
             <Card.Body>
               <Card.Title><FaInfoCircle className="me-2 text-secondary" />What is CGMS?</Card.Title>
               <Card.Text className="text-muted">
-                The Central Grievance Management System (CGMS) is a comprehensive solution designed to address and monitor grievances within the hospitality domain. CGMS enables guests to submit issues they face during their stay, helping service providers respond effectively to ensure a positive guest experience.
+                The Centralized Grievance Management System (CGMS) is designed to handle and streamline guest concerns efficiently. Submit your grievances, track their progress, and experience quick, thoughtful responses.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -45,9 +48,9 @@ function Home() {
         <Col>
           <Card className="shadow-sm rounded">
             <Card.Body>
-              <Card.Title><FaListUl className="me-2 text-secondary" />Main Purpose of This Website</Card.Title>
+              <Card.Title><FaListUl className="me-2 text-secondary" />Our Purpose</Card.Title>
               <Card.Text className="text-muted">
-                The goal of CGMS is to provide a streamlined way for guests to communicate any concerns or issues they encounter, facilitating quick responses and resolutions. Whether it’s a maintenance issue, service complaint, or other grievance, CGMS bridges the communication between guests and service teams, ensuring all concerns are managed in a timely and organized manner.
+                CGMS is here to simplify the way you communicate your needs and concerns during your stay. Our goal is to resolve issues promptly and keep you informed, so you can focus on enjoying your time.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -59,17 +62,17 @@ function Home() {
         <Col>
           <Card className="shadow-sm rounded">
             <Card.Body>
-              <Card.Title><FaMicrophone className="me-2 text-secondary" />How to Use This Website</Card.Title>
-              <Card.Text className="text-muted">CGMS offers several options for guests to register their grievances. Here’s how each feature works:</Card.Text>
+              <Card.Title><FaMicrophone className="me-2 text-secondary" />How to Use CGMS</Card.Title>
+              <Card.Text className="text-muted">Our platform makes it easy to report and track any concerns you may have. Here’s how:</Card.Text>
               <ul className="list-unstyled ms-3">
                 <li>
-                  <strong>Submit Normally:</strong> Register your grievance with details such as your name and email. This helps the service team communicate with you directly to resolve the issue.
+                  <strong>Submit Normally:</strong> Share details like your name and email, so our team can reach out for personalized assistance.
                 </li>
                 <li>
-                  <strong>Submit Anonymously:</strong> If you prefer to keep your identity private, submit anonymously. A unique tracking code is generated, which you can use on the "Track Grievance" page to check the status.
+                  <strong>Submit Anonymously:</strong> Prefer privacy? Submit anonymously, and we’ll give you a unique tracking code to follow up without sharing personal information.
                 </li>
                 <li>
-                  <strong>Voice-Activated Submission:</strong> For convenience, CGMS offers a voice-activated option, allowing you to register grievances hands-free.
+                  <strong>Voice-Activated Submission:</strong> Hands-free convenience! Use our voice option to submit issues quickly and effortlessly.
                 </li>
               </ul>
             </Card.Body>
@@ -80,28 +83,28 @@ function Home() {
       {/* FAQ Section */}
       <Row className="mb-4">
         <Col>
-          <h2 className="mb-4"><FaQuestionCircle className="me-2 text-secondary" />FAQs</h2>
+          <h2 className="mb-4"><FaQuestionCircle className="me-2 text-secondary" />Frequently Asked Questions</h2>
           <Accordion defaultActiveKey="0" className="shadow-sm rounded">
             {[
               {
                 question: "What types of issues can I report?",
-                answer: "You can report issues related to your stay, such as room maintenance, housekeeping requests, or service complaints.",
+                answer: "Feel free to report any issues impacting your stay, like room maintenance, housekeeping requests, or other service concerns.",
               },
               {
-                question: "How do I track a grievance if submitted anonymously?",
-                answer: "You will receive a unique tracking code after submitting a grievance anonymously. Use this code on the 'Track Grievance' page to check the status.",
+                question: "How can I track a grievance submitted anonymously?",
+                answer: "After submitting anonymously, you'll receive a tracking code. Use it on the 'Track Grievance' page to follow up on your concern.",
               },
               {
-                question: "Will my information be shared?",
-                answer: "If you choose anonymous submission, your details are not shared with the service team. Normal submissions allow them to connect with you for faster resolution.",
+                question: "Will my information be kept private?",
+                answer: "Yes, especially with anonymous submissions. For normal submissions, your contact details enable us to assist you directly.",
               },
               {
-                question: "What is the purpose of the voice-activated submission option?",
-                answer: "The voice-activated option provides hands-free reporting of issues, making it convenient and accessible.",
+                question: "What is the purpose of the voice-activated option?",
+                answer: "Our voice-activated submission lets you register grievances hands-free, making the process more accessible and convenient.",
               },
               {
-                question: "How long does it take for grievances to be resolved?",
-                answer: "Response times depend on the nature of the grievance, but the service team aims to address all issues as promptly as possible.",
+                question: "How long will it take to resolve my concern?",
+                answer: "We aim to resolve all grievances swiftly. Response times vary, but rest assured, our team is committed to addressing each issue promptly.",
               },
             ].map((item, index) => (
               <Accordion.Item eventKey={index.toString()} key={index}>
