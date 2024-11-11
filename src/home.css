@@ -1,0 +1,25 @@
+.home-container h1, h2 {
+  font-weight: bold;
+  color: #007bff; /* Primary color for titles */
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #6c757d; /* Muted text color for readability */
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+.accordion .accordion-body {
+  transition: all 0.3s ease;
+}

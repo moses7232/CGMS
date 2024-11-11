@@ -1,0 +1,37 @@
+/* DepartmentDashboard.css */
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.toast {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.toast-body {
+  font-weight: bold;
+  text-align: center;
+}
+
+.table thead {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,66 @@
+.admin-dashboard {
+    background-color: #f7f8fa;
+    border-radius: 8px;
+  }
+  
+  .text-center {
+    font-size: 1.5rem;
+    color: #343a40;
+  }
+  
+  .stat-card, .feedback-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card-header, .feedback-card-header {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .stat-card-body, .feedback-card-body {
+    background-color: #ffffff;
+    color: #495057;
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .feedback-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-item p {
+    margin: 5px 0;
+  }
+  
+  .feedback-card hr {
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .btn-primary {
+    background-color: #28a745;
+    border: none;
+    padding: 8px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;
+  }
+  
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: #007bff;
+  }
+  
